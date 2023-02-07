@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lander - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\OPERAI~1.CET\CONFIG~1\Temp\RSP80.tmp" with contents
+[
+opengl32.lib glu32.lib glaux.lib glut32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Lander.pdb" /debug /machine:I386 /out:"Debug/Lander.exe" /pdbtype:sept 
+".\Debug\CoordenadaCartesiana.obj"
+".\Debug\CoordenadaEsferica.obj"
+".\Debug\DatosCiclo.obj"
+".\Debug\DatosIniciales.obj"
+".\Debug\DibAgente.obj"
+".\Debug\DibGL.obj"
+".\Debug\Dlg_BuscarPatron.obj"
+".\Debug\Dlg_Datos.obj"
+".\Debug\Dlg_Estadisticas.obj"
+".\Debug\Dlg_IrA.obj"
+".\Debug\Lander.obj"
+".\Debug\LanderDoc.obj"
+".\Debug\LanderView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\ManejadorBitmap.obj"
+".\Debug\ManejadorFichero.obj"
+".\Debug\Orientacion.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Lander.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\OPERAI~1.CET\CONFIG~1\Temp\RSP80.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating temporary file "C:\DOCUME~1\OPERAI~1.CET\CONFIG~1\Temp\RSP81.tmp" with contents
+[
+/nologo /o"Debug/Lander.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\CoordenadaCartesiana.sbr"
+".\Debug\CoordenadaEsferica.sbr"
+".\Debug\DatosCiclo.sbr"
+".\Debug\DatosIniciales.sbr"
+".\Debug\DibAgente.sbr"
+".\Debug\DibGL.sbr"
+".\Debug\Dlg_BuscarPatron.sbr"
+".\Debug\Dlg_Datos.sbr"
+".\Debug\Dlg_Estadisticas.sbr"
+".\Debug\Dlg_IrA.sbr"
+".\Debug\Lander.sbr"
+".\Debug\LanderDoc.sbr"
+".\Debug\LanderView.sbr"
+".\Debug\MainFrm.sbr"
+".\Debug\ManejadorBitmap.sbr"
+".\Debug\ManejadorFichero.sbr"
+".\Debug\Orientacion.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\OPERAI~1.CET\CONFIG~1\Temp\RSP81.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Lander.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

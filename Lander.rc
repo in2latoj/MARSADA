@@ -1,0 +1,549 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español (España, alfabetización internacional) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Lander.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "//#include ""l.esp\\afxres.rc""          // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Lander.ico"
+IDR_LANDERTYPE          ICON                    "res\\LanderDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_TIERRA              BITMAP                  "res\\Land.bmp"
+IDB_FLECHA              BITMAP                  "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 17, 17
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_BUT_PP
+    BUTTON      ID_BUTCICLO_ADEL
+    BUTTON      ID_BUTCICLO_ATRAS
+    BUTTON      ID_BUTINTEN_ADEL
+    BUTTON      ID_BUTINTEN_ATRAS
+    SEPARATOR
+    BUTTON      ID_BUT_BUSCAR
+    BUTTON      ID_BUT_PATRON_ADEL
+    BUTTON      ID_BUT_PATRON_ATRAS
+    BUTTON      ID_BUT_IR_A
+    SEPARATOR
+    BUTTON      ID_BUT_DATOS
+    BUTTON      ID_BUT_GRAFICAS
+    BUTTON      ID_BUT_GRAFICAS2
+    BUTTON      ID_BUTTON_ESTADISTICAS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&Ver"
+    BEGIN
+        MENUITEM "Barra de &herramientas",      ID_VIEW_TOOLBAR
+        MENUITEM "Barra de &estado",            ID_VIEW_STATUS_BAR
+    END
+    POPUP "Ay&uda"
+    BEGIN
+        MENUITEM "Colores...",                  ID_AYUDA_COLORES
+        MENUITEM "&Acerca de Lander...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "A",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_BUTINTEN_ATRAS,      VIRTKEY, NOINVERT
+    VK_LEFT,        ID_BUTCICLO_ATRAS,      VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_BUTCICLO_ADEL,       VIRTKEY, NOINVERT
+    VK_UP,          ID_BUTINTEN_ADEL,       VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 237, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "&Acerca de Lander..."
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Lander Versión 3.0",IDC_STATIC,27,47,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,28,57,119,8
+    DEFPUSHBUTTON   "Aceptar",IDOK,198,66,32,14,WS_GROUP
+    LTEXT           "Juan Alfonso Lara Torralbo",IDC_STATIC,42,15,108,10
+    LTEXT           "Olivia Peraita Ezcurra",IDC_STATIC,42,25,131,11
+    ICON            IDR_MAINFRAME,IDR_MAINFRAME,7,13,20,20
+END
+
+IDD_IR_A DIALOG 0, 0, 176, 80
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Ir a"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Ir !",IDOK,136,59,33,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,88,59,40,14
+    LTEXT           "Numero de Intento :",IDC_STATIC,22,19,60,13
+    LTEXT           "Numero de Ciclo :",IDC_STATIC,22,36,58,12
+    EDITTEXT        IDC_EDIT1,86,17,27,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,85,34,28,12,ES_AUTOHSCROLL
+END
+
+IDD_BUSCAR_PATRON DIALOG 0, 0, 157, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Buscar patron"
+FONT 12, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Busca!",IDOK,119,53,31,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,67,53,36,14
+    LTEXT           "Número de Patrón:",IDC_STATIC,16,16,63,13
+    EDITTEXT        IDC_EDIT1,81,14,27,13,ES_AUTOHSCROLL
+    CONTROL         "Buscar hacia Atrás",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,32,75,14
+END
+
+//He desabilitado todas las llamadas relacionadas a esta ventana
+IDD_DATOS DIALOGEX 500, 100, 160, 250
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Datos del Agente"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Patron:",IDC_STATIC,25,5,24,10
+    LTEXT           "0",IDC_STATIC_PATRON,53,5,32,10,SS_SUNKEN
+    GROUPBOX        "Valoraciones",IDC_STATIC,10,20,140,55
+    LTEXT           "Valoracion de Propagación:",IDC_STATIC,22,30,100,10
+    LTEXT           "Valoración del Patrón:",IDC_STATIC,22,40,100,10
+    LTEXT           "VP:",IDC_STATIC,22,50,100,10
+    LTEXT           "VN:",IDC_STATIC,22,60,100,10
+    LTEXT           "---",IDC_STATIC_VAL_PROP,110,30,20,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_VAL_PATR,110,40,20,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_VAL_P,110,50,20,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_VAL_N,110,60,20,10,SS_SUNKEN
+    GROUPBOX        "Acciones",IDC_STATIC,10,80,140,75
+    LTEXT           "Arriba",IDC_STATIC,22,90,35,10
+    LTEXT           "Abajo",IDC_STATIC,22,100,35,10
+    LTEXT           "Izquierda",IDC_STATIC,22,110,40,10
+    LTEXT           "Derecha",IDC_STATIC,22,120,35,10
+    LTEXT           "Parar",IDC_STATIC,22,130,35,10
+    LTEXT           "Avanzar",IDC_STATIC,22,140,35,10
+    LTEXT           "---",IDC_STATIC_S1,80,90,20,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_S2,80,100,20,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_S3,80,110,20,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_S4,80,120,20,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_S5,80,130,20,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_S6,80,140,20,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_G1,110,90,30,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_G2,110,100,30,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_G3,110,110,30,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_G4,110,120,30,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_G5,110,130,30,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_G6,110,140,30,10,SS_SUNKEN
+//    CONTROL         IDB_FLECHA,IDC_STATIC_B1,15,90,7,6,NOT WS_VISIBLE | NOT WS_GROUP
+//    CONTROL         IDB_FLECHA,IDC_STATIC_B2,15,100,7,6,NOT WS_VISIBLE | NOT WS_GROUP
+//    CONTROL         IDB_FLECHA,IDC_STATIC_B3,15,110,7,6,NOT WS_VISIBLE | NOT WS_GROUP
+//    CONTROL         IDB_FLECHA,IDC_STATIC_B4,15,120,7,6,NOT WS_VISIBLE | NOT WS_GROUP
+//    CONTROL         IDB_FLECHA,IDC_STATIC_B5,15,130,7,6,NOT WS_VISIBLE | NOT WS_GROUP
+//    CONTROL         IDB_FLECHA,IDC_STATIC_B6,15,140,7,6,NOT WS_VISIBLE | NOT WS_GROUP
+    GROUPBOX        "Orientación",IDC_STATIC,10,170,140,25
+    LTEXT           "Zona XY",IDC_STATIC,25,180,30,10
+    LTEXT           "ZonaYZ",IDC_STATIC,85,180,30,10
+    LTEXT           "---",IDC_STATIC_ZONAXY,60,180,20,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_ZONAYZ,120,180,20,10,SS_SUNKEN
+    GROUPBOX        "Posición",IDC_STATIC,10,210,140,25
+    LTEXT           "X",IDC_STATIC,25,220,12,10
+    LTEXT           "Y",IDC_STATIC,65,220,8,10
+    LTEXT           "Z",IDC_STATIC,105,220,8,10
+    LTEXT           "---",IDC_STATIC_ZONAXY2,40,220,20,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_ZONAXY3,80,220,20,10,SS_SUNKEN
+    LTEXT           "---",IDC_STATIC_ZONAXY4,120,220,20,10,SS_SUNKEN
+END
+
+IDD_RESULTADOS DIALOGEX 400, 100, 192, 262
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Resultados de la Simulacion"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Número medio de ciclos por intento :",IDC_STATIC,22,13,117,11
+    LTEXT           "0",IDC_STATIC_MEDIA,146,13,38,11
+    LTEXT           "Desviación Típica:",IDC_STATIC,22,27,110,10
+    LTEXT           "0",IDC_STATIC_DESVTIP,146,26,38,11
+    LTEXT           "Porcentaje de éxitos:",IDC_STATIC,22,51,67,14
+    LTEXT           "%",IDC_STATIC,110,192,18,15
+    LTEXT           "0",IDC_STATIC_PORCENTAGE,95,51,22,16
+    LTEXT           "Número total de Patrones de Percepción:",IDC_STATIC,22,93,101,21
+    LTEXT           "0",IDC_STATIC_PATRONES,141,94,34,14
+    LTEXT           "Porcentaje de éxitos real:",IDC_STATIC,22,72,83,21
+    LTEXT           "Horas",IDC_STATIC,32,136,29,8
+    LTEXT           "0",IDC_STATIC_HORAS,76,136,34,10
+    LTEXT           "Tiempo de Simulación:",IDC_STATIC,22,122,82,14
+    LTEXT           "Minutos",IDC_STATIC,32,146,29,8
+    LTEXT           "Segundos",IDC_STATIC,32,156,39,8
+    LTEXT           "0",IDC_STATIC_MINUTOS,76,146,34,10
+    LTEXT           "0",IDC_STATIC_SEGUNDOS,76,156,34,10
+    LTEXT           "%",IDC_STATIC,138,72,18,15
+    LTEXT           "0",IDC_STATIC_PORCENTAGE2,110,72,22,16
+    LTEXT           "<= 50",IDC_STATIC,32,192,29,8
+    LTEXT           "0",IDC_STATIC_INT1,76,192,34,10
+    LTEXT           "Tasas de ciclos por intervalos:",IDC_STATIC,22,177,124,14
+    LTEXT           "51 - 100",IDC_STATIC,32,202,29,8
+    LTEXT           "101 - 150",IDC_STATIC,32,212,39,8
+    LTEXT           "0",IDC_STATIC_INT2,76,202,34,10
+    LTEXT           "0",IDC_STATIC_INT3,76,212,34,10
+    LTEXT           "151 - 500",IDC_STATIC,32,223,32,8
+    LTEXT           ">500",IDC_STATIC,32,234,39,8
+    LTEXT           "0",IDC_STATIC_INT4,76,223,34,10
+    LTEXT           "0",IDC_STATIC_INT5,76,234,34,10
+    LTEXT           "%",IDC_STATIC,121,51,18,15
+    LTEXT           "%",IDC_STATIC,110,202,18,15
+    LTEXT           "%",IDC_STATIC,110,213,18,15
+    LTEXT           "%",IDC_STATIC,110,223,18,15
+    LTEXT           "%",IDC_STATIC,110,234,18,15
+END
+
+IDD_AYUDA_COLORES DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Leyenda Colores"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,129,69,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04b0"
+        BEGIN
+            VALUE "FileDescription", "Aplicación MFC Lander"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Lander"
+            VALUE "LegalCopyright", "Copyright (C) 2001"
+            VALUE "OriginalFilename", "Lander.EXE"
+            VALUE "ProductName", "Aplicación Lander"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_IR_A, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_BUSCAR_PATRON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_DATOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+        HORZGUIDE, 155
+    END
+
+    IDD_RESULTADOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        VERTGUIDE, 32
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+        HORZGUIDE, 192
+        HORZGUIDE, 202
+        HORZGUIDE, 212
+        HORZGUIDE, 224
+        HORZGUIDE, 234
+    END
+
+    IDD_AYUDA_COLORES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Lander\n\nLander\n\n\nLander.Document\nLander Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Lander"
+    AFX_IDS_IDLEMESSAGE     "Preparado"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "MAY"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "DESP"
+    ID_INDICATOR_OVR        "SOB"
+    ID_INDICATOR_REC        "GRB"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Crea un nuevo documento\nNuevo"
+    ID_FILE_OPEN            "Abre un documento ya existente\nAbrir"
+    ID_FILE_CLOSE           "Cierra el documento activo\nCerrar"
+    ID_FILE_SAVE            "Guarda el documento activo\nGuardar"
+    ID_FILE_SAVE_AS         "Guarda el documento activo con un nuevo nombre\nGuardar como"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Muestra información del programa, número de versión y copyright\nAcerca de"
+    ID_APP_EXIT             "Sale de la aplicación; le pide que guarde los documentos\nSalir"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Abre este documento"
+    ID_FILE_MRU_FILE2       "Abre este documento"
+    ID_FILE_MRU_FILE3       "Abre este documento"
+    ID_FILE_MRU_FILE4       "Abre este documento"
+    ID_FILE_MRU_FILE5       "Abre este documento"
+    ID_FILE_MRU_FILE6       "Abre este documento"
+    ID_FILE_MRU_FILE7       "Abre este documento"
+    ID_FILE_MRU_FILE8       "Abre este documento"
+    ID_FILE_MRU_FILE9       "Abre este documento"
+    ID_FILE_MRU_FILE10      "Abre este documento"
+    ID_FILE_MRU_FILE11      "Abre este documento"
+    ID_FILE_MRU_FILE12      "Abre este documento"
+    ID_FILE_MRU_FILE13      "Abre este documento"
+    ID_FILE_MRU_FILE14      "Abre este documento"
+    ID_FILE_MRU_FILE15      "Abre este documento"
+    ID_FILE_MRU_FILE16      "Abre este documento"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Cambia a la siguiente sección de ventana\nSiguiente sección"
+    ID_PREV_PANE            "Vuelve a la sección de ventana anterior\nSección anterior"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Divide la ventana activa en secciones\nDividir"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Borra la selección\nBorrar"
+    ID_EDIT_CLEAR_ALL       "Borra todo\nBorrar todo"
+    ID_EDIT_COPY            "Copia la selección y la coloca en el portapapeles\nCopiar"
+    ID_EDIT_CUT             "Corta la selección y la coloca en el portapapeles\nCortar"
+    ID_EDIT_FIND            "Buscaa el texto especificado\nBuscar"
+    ID_EDIT_PASTE           "Inserta el contenido del portapapeles\nPegar"
+    ID_EDIT_REPEAT          "Repite la última acción\nRepetir"
+    ID_EDIT_REPLACE         "Reemplaza texto específico por otro texto\nReemplazar"
+    ID_EDIT_SELECT_ALL      "Selecciona todo el documento\nSeleccionar todo"
+    ID_EDIT_UNDO            "Deshace la última acción\nDeshacer"
+    ID_EDIT_REDO            "Rehace la acción que acaba de deshacerse\nRehacer"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Muestra u oculta la barra de herramientas\nAlternar Barra de herramientas"
+    ID_VIEW_STATUS_BAR      "Muestra u oculta la barra de estado\nAlternar Barra de estado"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Cambia el tamaño de la ventana"
+    AFX_IDS_SCMOVE          "Cambia la posición de la ventana"
+    AFX_IDS_SCMINIMIZE      "Reduce la ventana a un icono"
+    AFX_IDS_SCMAXIMIZE      "Agranda la ventana al tamaño completo"
+    AFX_IDS_SCNEXTWINDOW    "Cambia a la ventana del siguiente documento"
+    AFX_IDS_SCPREVWINDOW    "Cambia a la ventana del documento anterior"
+    AFX_IDS_SCCLOSE         "Cierra la ventana activa y le pide que guarde los documentos"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaura la ventana a su tamaño normal"
+    AFX_IDS_SCTASKLIST      "Activa la lista de tareas"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BUTCICLO_ADEL        "Adelanta un ciclo"
+    ID_BUTCICLO_ATRAS       "Retroceder un ciclo"
+    ID_BUTINTEN_ADEL        "Adelanta un intento"
+    ID_BUTINTEN_ATRAS       "Retrocede un intento"
+    ID_BUT_BUSCAR           "Busca un numero de patron"
+    ID_BUT_PATRON_ADEL      "Busca el siguiente patron igual hacia delante"
+    ID_BUTTON32778          "Busca el siguiente patron igual hacia detras"
+    ID_BUT_IR_A             "Ir al intento y ciclo deseado"
+    ID_BUT_DATOS            "Muestra los datos del agente"
+    ID_BUTTON32783          "Estadísticas de la simulacion"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BUT_PP               "Play/Pause"
+END
+
+#endif    // Español (España, alfabetización internacional) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#endif
+#include "res\Lander.rc2"  // non-Microsoft Visual C++ edited resources
+//#include "l.esp\afxres.rc"          // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
